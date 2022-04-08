@@ -1,4 +1,4 @@
-# Git Credential Manager
+Git Credential Manager
 
 [![Build Status](https://github.com/GitCredentialManager/git-credential-manager/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/GitCredentialManager/git-credential-manager/actions/workflows/continuous-integration.yml)
 
@@ -36,11 +36,9 @@ Proxy support|&#10003;|&#10003;|&#10003;
 
 **Notes:**
 
-(\*) Fedora packages planned but not yet available.
+(\*) Fedora packages planned but not yet available. Download and Install
 
-## Download and Install
-
-### macOS Homebrew
+macOS Homebrew
 
 The preferred installation mechanism is using Homebrew; we offer a Cask in our custom Tap.
 
@@ -57,11 +55,10 @@ After installing you can stay up-to-date with new releases by running:
 brew upgrade git-credential-manager-core
 ```
 
-#### Git Credential Manager for Mac and Linux (Java-based GCM)
+ Git Credential Manager for Mac and Linux (Java-based GCM)
 
 If you have an existing installation of the 'Java GCM' on macOS and you have installed this using Homebrew, this installation will be unlinked (`brew unlink git-credential-manager`) when GCM is installed.
-
-#### Uninstall
+Uninstall
 
 To uninstall, run the following:
 
@@ -71,11 +68,11 @@ brew uninstall --cask git-credential-manager-core
 
 ---
 
-### macOS Package
+ macOS Package
 
 We also provide a [.pkg installer](https://github.com/GitCredentialManager/git-credential-manager/releases/latest) with each release. To install, double-click the installation package and follow the instructions presented.
 
-#### Uninstall
+ Uninstall
 
 To uninstall, run the following:
 
@@ -87,9 +84,9 @@ sudo /usr/local/share/gcm-core/uninstall.sh
 
 <!-- this explicit anchor should stay stable so that external docs can link here -->
 <a name="linux-install-instructions"></a>
-### Linux
+Linux
 
-#### Experimental: install from source helper script
+Experimental: install from source helper script
 
 If you would like to help dogfood our new install from source helper script,
 run the following:
@@ -115,7 +112,7 @@ __Note:__ You will be prompted to enter your credentials so that the script
 can download GCM's dependencies using your distribution's package
 manager.
 
-#### Ubuntu/Debian distributions
+ Ubuntu/Debian distributions
 
 Download the latest [.deb package](https://github.com/GitCredentialManager/git-credential-manager/releases/latest), and run the following:
 
@@ -155,13 +152,13 @@ rm $(command -v git-credential-manager-core)
 
 ---
 
-### Windows
+ Windows
 
 GCM is included with [Git for Windows](https://gitforwindows.org/), and the latest version is included in each new Git for Windows release. This is the preferred way to install GCM on Windows. During installation you will be asked to select a credential helper, with GCM being set as the default.
 
 ![image](https://user-images.githubusercontent.com/5658207/140082529-1ac133c1-0922-4a24-af03-067e27b3988b.png)
 
-#### Standalone installation
+Standalone installation
 
 You can also download the [latest installer](https://github.com/GitCredentialManager/git-credential-manager/releases/latest) for Windows to install GCM standalone.
 
@@ -181,15 +178,15 @@ There are two flavors of standalone installation on Windows:
 
 To install, double-click the desired installation package and follow the instructions presented.
 
-#### Uninstall (Windows 10)
+ Uninstall (Windows 10)
 
 To uninstall, open the Settings app and navigate to the Apps section. Select "Git Credential Manager" and click "Uninstall".
 
-#### Uninstall (Windows 7-8.1)
+ Uninstall (Windows 7-8.1)
 
 To uninstall, open Control Panel and navigate to the Programs and Features screen. Select "Git Credential Manager" and click "Remove".
 
-#### Windows Subsystem for Linux (WSL)
+ Windows Subsystem for Linux (WSL)
 
 Git Credential Manager can be used with the [Windows Subsystem for Linux
 (WSL)](https://aka.ms/wsl) to enable secure authentication of your remote Git
@@ -197,7 +194,7 @@ repositories from inside of WSL.
 
 [Please see the GCM on WSL docs](docs/wsl.md) for more information.
 
-## Supported Git versions
+ Supported Git versions
 
 Git Credential Manager tries to be compatible with the broadest set of Git
 versions (within reason). However there are some know problematic releases of
@@ -213,7 +210,7 @@ Git that are not compatible.
   configuration that GCM relies on. This issue was fixed in commit [`12294990`](https://github.com/git/git/commit/12294990c90e043862be9eb7eb22c3784b526340)
   of the Git project, and released in Git 2.27.0.
 
-## How to use
+How to use
 
 Once it's installed and configured, Git Credential Manager is called implicitly by Git.
 You don't have to do anything special, and GCM isn't intended to be called directly by the user.
@@ -223,11 +220,11 @@ Later Git commands in the same repository will re-use existing credentials or to
 
 Read full command line usage [here](docs/usage.md).
 
-### Configuring a proxy
+ Configuring a proxy
 
 See detailed information [here](https://aka.ms/gcm/httpproxy).
 
-## Additional Resources
+Additional Resources
 
 - [Frequently asked questions](docs/faq.md)
 - [Development and debugging](docs/development.md)
@@ -239,20 +236,19 @@ See detailed information [here](https://aka.ms/gcm/httpproxy).
 - [Credential stores](docs/credstores.md)
 - [Architectural overview](docs/architecture.md)
 - [Host provider specification](docs/hostprovider.md)
-
-## Experimental Features
+ Experimental Features
 
 - [Windows broker (experimental)](docs/windows-broker.md)
 - [Azure Repos OAuth tokens (experimental)](docs/azrepos-users-and-tokens.md)
 
-## Contributing
+Contributing
 
 This project welcomes contributions and suggestions.  
 See the [contributing guide](CONTRIBUTING.md) to get started.
 
 This project follows [GitHub's Open Source Code of Conduct](CODE_OF_CONDUCT.md).
 
-## License
+License
 
 We're [MIT](LICENSE) licensed.
 When using GitHub logos, please be sure to follow the [GitHub logo guidelines](https://github.com/logos).
